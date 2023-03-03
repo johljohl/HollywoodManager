@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmstudio Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Filmstudio Manager</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Hem</a></li>
+          <li><a href="#">Filmer</a></li>
+          <li><a href="#">Personal</a></li>
+          <li><a href="#">Marknadsföring</a></li>
+          <li><a href="#">Samarbeten</a></li>
+          <li><a href="#">Rankinglista</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="budget">
+        <h2>Budget</h2>
+        <p>Din budget är <span id="budget-belopp">2000000</span> dollar</p>
+      </section>
+
+      <section id="val">
+        <h2>Välj din nästa film</h2>
+        <form>
+          <div class="form-grupp">
+            <label for="regissörer">Regissörer:</label>
+            <select name="regissörer" id="regissörer">
+              <option value="0">Ingen vald</option>
+              <option value="10000">Steven Spielberg (10000 dollar)</option>
+              <option value="8000">Christopher Nolan (8000 dollar)</option>
+              <option value="5000">Quentin Tarantino (5000 dollar)</option>
+            </select>
+          </div>
+
+          <div class="form-grupp">
+            <label for="skådespelare">Skådespelare:</label>
+            <select name="skådespelare" id="skådespelare">
+              <option value="0">Ingen vald</option>
+            </select>
+          </div>
+
+          <div class="form-grupp">
+            <label for="manus">Manus:</label>
+            <select name="manus" id="manus">
+              <option value="0">Ingen vald</option>
+              <option value="5000">Aaron Sorkin (5000 dollar)</option>
+              <option value="3000">Woody Allen (3000 dollar)</option>
+              <option value="2000">Charlie Kaufman (2000 dollar)</option>
+            </select>
+          </div>
+
+          <div class="form-grupp">
+            <label for="längd">Längd (i minuter):</label>
+            <input
+              type="number"
+              name="längd"
+              id="längd"
+              min="60"
+              max="240"
+              value="120"
+            />
+          </div>
+
+          <div class="form-grupp">
+            <button type="submit">Starta produktionen</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="produktion">
+        <h2>Pågående produktion</h2>
+        <p>Filmtitel: <span id="filmtitel"></span></p>
+        <p>Regissör: <span id="regissör"></span></p>
+        <p>Skådespelare: <span id="skådespelare"></span></p>
+        <p>Manusförfattare: <span id="manusförfattare"></span></p>
+        <p>Längd: <span id="längd"></span> minuter</p>
+        <p>Kostnad hittills: <span id="kostnad-hittills"></span> dollar</p>
+      </section>
+      <section id="vinst">
+        <h2>Vinst och förlust</h2>
+        <p>
+          Din senaste film <span id="vinst-text"></span>
+          <span id="vinst-belopp"></span> dollar
+        </p>
+        <p>Din totala vinst hittills: <span id="total-vinst"></span> dollar</p>
+        <p>
+          Din totala förlust hittills: <span id="total-förlust"></span> dollar
+        </p>
+      </section>
+      <footer>
+        <p>&copy; 2023 Filmstudio Manager</p>
+      </footer>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>

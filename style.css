@@ -1,0 +1,152 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Globala stilar */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-grupp {
+  margin-bottom: 1rem;
+  flex-basis: 48%;
+}
+
+.form-grupp label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-grupp select,
+.form-grupp input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.form-grupp select:focus,
+.form-grupp input:focus {
+  outline: none;
+  border-color: #555;
+}
+
+form button[type="submit"] {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+form button[type="submit"]:hover {
+  background-color: #555;
+}
+
+section#vinst {
+  display: none;
+}
+
+#filmtitel,
+#regissör,
+#skådespelare,
+#manusförfattare,
+#längd,
+#kostnad-hittills,
+#vinst-text,
+#vinst-belopp,
+#total-vinst,
+#total-förlust {
+  font-weight: bold;
+}
+
+#budget-belopp {
+  font-weight: bold;
+  color: green;
+}
+
+#vinst-belopp {
+  font-weight: bold;
+  color: green;
+}
+
+#vinst-text {
+  font-weight: bold;
+  color: green;
+}
+
+#vinst-text.förlust {
+  color: red;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
